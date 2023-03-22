@@ -1,13 +1,20 @@
 <a [routerLink]="['/']">
-  <h1>NIDS</h1>
+  <h1 class="title">NIDS</h1>
 </a>
 
+<div class="search-container">
+  <form action="/search">
+    <input class="searchbar" type="text" placeholder="Search for a product...">
+    <button class="search-button" type="submit">Search</button>
+  </form>
+</div>
+
 <nav>
-  <a [routerLink]="['/products']">Browse Products</a>
-  <a [routerLink]="['/login/register']">Login/Register</a>
-  <a [routerLink]="['/basket']">My Basket</a>
+  <a class="nav-button" [routerLink]="['/products']">Browse Products</a>
+  <a class="nav-button" [routerLink]="['/login/register']">Login/Register</a>
+  <a class="nav-button" [routerLink]="['/basket']">My Basket</a>
 </nav>
 
-<a routerLink="/basket" class="button fancy-button">
+<a routerLink="/basket" class="button cart-button">
   <img class="material-icons" src="/assets/cart.jpg" alt="cart">Checkout
 </a>
