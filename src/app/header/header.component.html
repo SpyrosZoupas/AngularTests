@@ -1,1 +1,13 @@
-<p>header works!</p>
+<a [routerLink]="['/']">
+  <h1>NIDS</h1>
+</a>
+
+<nav>
+  <a [routerLink]="['/products']">Browse Products</a>
+  <a [routerLink]="['/login/register']">Login/Register</a>
+  <a [routerLink]="['/basket']">My Basket</a>
+</nav>
+
+<a routerLink="/basket" class="button fancy-button">
+  <img class="material-icons" src="/assets/cart.jpg" alt="cart">Checkout
+</a>
