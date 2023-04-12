@@ -1,0 +1,37 @@
+.load-time {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(9, 1fr);
+  margin-left: 300px;
+  margin-right: 50px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #008000;
+  background-color: rgb(222, 222, 222);
+  padding: 10px;
+  font-size: 20px;
+  width: 150px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+
+
+* {
+  color: black;
+}
